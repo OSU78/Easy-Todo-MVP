@@ -36,6 +36,12 @@
     background-color: #db4925 !important;
 }
 
+.error {
+    transition: .2s;
+    border: 1px solid #ff000069 !important;
+    box-shadow: 1px 1px 20px rgb(244 67 54 / 13%);
+}
+
 .etude {
     transition: all .25s;
     color: white;
@@ -262,7 +268,7 @@ textarea,
 }
 
 .input-custom:focus {
-    border: 1px solid rgb(212, 212, 212);
+    border: 1px solid rgb(212, 212, 212) !important;
     outline-style: solid;
     outline-color: var(--secondColor2);
     outline-width: 1px;
@@ -312,5 +318,12 @@ label {
     }
     div.flexRow {
         justify-content: space-between;
+    }
+}
+
+@media (max-width:345px) {
+    .cat {
+        min-width: 25%;
+        max-width: 25%;
     }
 }

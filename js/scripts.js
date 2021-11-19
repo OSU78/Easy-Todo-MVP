@@ -48,9 +48,11 @@ btn.addEventListener("click", (e) => {
     e.preventDefault();
     if (taskValue.trim() == "" || categorieValue.trim() == "") {
         console.log("Veuillez remplir tout les champs")
+        document.getElementById("tacheInput").classList.add("error")
         return 0;
     }
     console.log("Ajout de la tache")
+    document.getElementById("tacheInput").classList.toggle("error")
     let itemId = Math.floor(Math.random() * 785410);
 
     localStorage.setItem(itemId, [itemId, taskValue, categorieValue.trim()]);
