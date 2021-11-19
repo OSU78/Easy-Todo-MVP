@@ -92,6 +92,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+  
 }
 
 main {
@@ -100,9 +101,9 @@ main {
     justify-content: center;
     flex-flow: column;
     max-width: 600px;
-    /* height: 100vh; */
-    margin: 5px;
-    padding: 10px;
+    
+    
+    margin-top: 10px;
     flex-grow: 1;
 }
 
@@ -278,7 +279,8 @@ textarea,
     padding: 10px;
     caret-color: #00c78f;
     border: 1px solid rgba(212, 212, 212, 0.774);
-    transition: .5s
+    transition: .5s;
+    font-size: 25px;
 }
 
 .input-custom:focus {
@@ -317,4 +319,24 @@ label {
     color: #b9b8b8;
 
     top: -10px
+}
+
+.space{
+    justify-content: space-between !important;
+}
+
+@media (max-width:500px) {
+    h1{
+        font-size: 22px;
+        color: rgb(56, 56, 56);
+    }
+    
+    body{ 
+       display: block;
+       margin: 20px;
+    }
+
+    div.flexRow{
+        justify-content: center;
+    }
 }
