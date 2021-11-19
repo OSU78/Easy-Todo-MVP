@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TODO LIST.MVP</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <script src="js/cookie.js"></script>
+  <body >
+    <header></header>
+    <main>
+      <h1 style="text-align: center">CREATE TODOLIST</h1>
+      <form autocomplete="off" class="form flex" action="#" style="z-index: 1">
+        <div class="flex">
+          <div class="inputDiv">
+            <input
+              class="input-custom in1"
+              name="tacheInput"
+              type="text"
+              id="tacheInput"
+              onblur="hideLable()"
+              onfocus="hideLable2()"
+            />
+            <label class="input_label lab1" for="tacheInput"
+              >Entré le nom de la tache *</label
+            >
+          </div>
+        </div>
+        <div class="categorie">
+          <h3>Catégorie</h3>
+          <ul>
+            <li class="cat">Etude</li>
+            <li class="cat">Urgent</li>
+            <li class="cat">Autre</li>
+            <li class="cat">Course</li>
+          </ul>
+        </div>
+        <!--BUTTON D'ENVOIE DU FORMULAIRE-->
+        <div class="center">
+          <input
+            class="form_btn"
+            type="submit"
+            value="AJOUTER"
+          />
+          <hr class="customHr" />
+        </div>
+      </form>
+
+
+      <h1 style="text-align: center" onload="test()">MY TODOLIST</h1>
+      <div class="flexRow">
+        <section class="
+        etude padding">
+          <h5 >Etude</h5>
+          <hr>
+        </section>
+
+        <section class="urgent padding">
+          <h5 >Urgent</h5>
+          <hr>
+        </section>
+
+        <section class="autre padding">
+          <h5>Autre</h5>
+          <hr>
+          
+        </section>
+
+        <section class="course padding">
+          <h5>Course</h5>
+          <hr>
+        </section>
+      </div>
+    </main>
+    <footer></footer>
+    <script src="js/function.js"></script>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
