@@ -3,7 +3,6 @@
     margin: 0px;
     padding: 0px;
     text-decoration: none;
-
 }
 
 .cat {
@@ -37,7 +36,6 @@
     background-color: #db4925 !important;
 }
 
-
 .etude {
     transition: all .25s;
     color: white;
@@ -66,8 +64,6 @@
     border-radius: 5px;
 }
 
-
-
 .padding h5 {
     user-select: none;
     cursor: pointer;
@@ -77,7 +73,7 @@
     color: #f9f9f99f;
 }
 
-.padding >div {
+.padding>div {
     margin-left: 20px;
     margin-right: 20px;
     margin-top: 5px;
@@ -92,7 +88,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-  
 }
 
 main {
@@ -101,14 +96,11 @@ main {
     justify-content: center;
     flex-flow: column;
     max-width: 600px;
-    
-    
     margin-top: 10px;
     flex-grow: 1;
 }
 
 .flex {
-
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -137,17 +129,14 @@ main {
     0% {
         opacity: 0;
         transform: scaleY(0);
-       
     }
-    50%{
+    50% {
         opacity: .4s;
     }
-
     100% {
         transform: scaleY(1);
         opacity: 1;
     }
-
 }
 
 hr {
@@ -165,7 +154,6 @@ hr {
     transition: .15s;
     border: 1px solid rgba(199, 199, 199, 0.603);
     border-radius: 3px;
-
 }
 
 .taskDel:hover {
@@ -175,7 +163,8 @@ hr {
     transition: .15s;
     border: 1px solid rgb(126, 126, 126);
 }
-.delTaskAnimation{
+
+.delTaskAnimation {
     opacity: 0;
     transform: scaleY(0);
     transition: .2s;
@@ -185,17 +174,14 @@ header {
     margin: 5px;
 }
 
-
 footer {
     padding: 5px;
-
     color: rgba(255, 255, 255, 0.479);
 }
 
 form {
     margin-top: 8px;
 }
-
 
 .opacity {
     opacity: .2;
@@ -227,18 +213,14 @@ form {
     border: solid 2px rgb(14, 182, 147);
     color: rgb(14, 182, 147);
     transition: .2s;
-
-
 }
 
 .relative {
     position: relative;
 }
 
-
 .inputDiv {
     position: relative;
-
 }
 
 .center {
@@ -247,8 +229,6 @@ form {
 
 .inputDiv2 {
     position: relative;
-
-
 }
 
 .inputDiv2 input,
@@ -257,7 +237,6 @@ textarea,
     width: -webkit-fill-available;
     width: -moz-available;
     margin-top: 15px;
-
 }
 
 .input_label {
@@ -271,7 +250,6 @@ textarea,
     transition: .1s;
     cursor: text;
 }
-
 
 .input-custom {
     border-radius: 3px;
@@ -303,11 +281,10 @@ label {
     background: -moz-linear-gradient(0deg, rgba(205, 205, 205, 0) 0%, rgba(249, 251, 254, 1) 41%);
     background: -webkit-linear-gradient(0deg, rgba(205, 205, 205, 0) 0%, rgba(249, 251, 254, 1) 41%);
     background: linear-gradient(0deg, rgba(205, 205, 205, 0) 0%, rgba(249, 251, 254, 1) 41%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#cdcdcd", endColorstr="#f9fbfe", GradientType=1);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#cdcdcd", endColorstr="#f9fbfe", GradientType=1);
     border-radius: 5px;
     color: #b9b8b8;
 }
-
 
 .input-custom {
     overflow: visible;
@@ -317,26 +294,23 @@ label {
     text-overflow: ellipsis;
     font-size: 11px;
     color: #b9b8b8;
-
     top: -10px
 }
 
-.space{
+.space {
     justify-content: space-between !important;
 }
 
 @media (max-width:500px) {
-    h1{
+    h1 {
         font-size: 22px;
         color: rgb(56, 56, 56);
     }
-    
-    body{ 
-       display: block;
-       margin: 20px;
+    body {
+        display: block;
+        margin: 20px;
     }
-
-    div.flexRow{
-        justify-content: center;
+    div.flexRow {
+        justify-content: space-between;
     }
 }
