@@ -52,7 +52,7 @@ btn.addEventListener("click", (e) => {
         return 0;
     }
     console.log("Ajout de la tache")
-    document.getElementById("tacheInput").classList.toggle("error")
+    document.getElementById("tacheInput").classList.remove("error")
     let itemId = Math.floor(Math.random() * 785410);
 
     localStorage.setItem(itemId, [itemId, taskValue, categorieValue.trim()]);
