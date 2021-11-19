@@ -5,6 +5,39 @@
     text-decoration: none;
 }
 
+
+/*
+ *  STYLE 1
+ */
+
+
+/* width */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+
+/* Track */
+
+ ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+
+/* Handle */
+
+ ::-webkit-scrollbar-thumb {
+    background: rgba(85, 206, 176, 0.527);
+}
+
+
+/* Handle on hover */
+
+ ::-webkit-scrollbar-thumb:hover {
+    background: rgb(13, 158, 146);
+}
+
 .cat {
     min-width: 45%;
 }
