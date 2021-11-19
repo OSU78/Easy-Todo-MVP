@@ -48,11 +48,18 @@ btn.addEventListener("click", (e) => {
     e.preventDefault();
     if (taskValue.trim() == "" || categorieValue.trim() == "") {
         console.log("Veuillez remplir tout les champs")
-        document.getElementById("tacheInput").classList.add("error")
+        if(taskValue.trim() == ""){
+            document.getElementById("tacheInput").classList.add("error")
+        }
+        else if(categorieValue.trim() == ""){
+            document.getElementById("catUl").classList.add("error")
+        }
+       
         return 0;
     }
     console.log("Ajout de la tache")
     document.getElementById("tacheInput").classList.remove("error")
+    document.getElementById("catUl").classList.remove("error")
     let itemId = Math.floor(Math.random() * 785410);
 
     localStorage.setItem(itemId, [itemId, taskValue, categorieValue.trim()]);
@@ -61,7 +68,9 @@ btn.addEventListener("click", (e) => {
 
 
     catTask.innerHTML += task
-
+    document.querySelectorAll("." + categorieValue.trim())[0].classList.toggle(categorieValue.trim())
+    document.getElementById("tacheInput").value=""
+    categorieValue=""
 })
 
 
