@@ -44,6 +44,8 @@ for (let i = 0; i < cat.length; i++) {
 }
 
 btn.addEventListener("click", (e) => {
+
+    
     taskValue = document.getElementById("tacheInput").value
     e.preventDefault();
     if (taskValue.trim() == "" || categorieValue.trim() == "") {
@@ -63,7 +65,7 @@ btn.addEventListener("click", (e) => {
     let itemId = Math.floor(Math.random() * 785410);
 
     localStorage.setItem(itemId, [itemId, taskValue, categorieValue.trim()]);
-    let task = `<div class="flexRow"><p>${taskValue}</p> <div class="taskDel" item="NTask_${itemId}" onclick="deleteTask(${itemId})">Delete</div></div>`
+    let task = `<div class="flexRow"><p>${taskValue}</p> <div class="taskDel" item="NTask_${itemId}" onclick="deleteTask(${itemId})"><img src="./del.png" width="20px"></div></div>`
     let catTask = document.querySelectorAll("." + categorieValue.trim())[1]
 
 

@@ -1,77 +1,77 @@
 <!DOCTYPE html>
 <html lang="fr">
+	<head>
+		<meta charset="UTF-8"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<title>TODO LIST.MVP</title>
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="EasyTask">
+		<meta property="og:url" content="https://easy-todo.vercel.app/">
+		<meta property="og:image" content="https://i.ibb.co/q5dzW16/Easytask.jpg">
+		<meta property="og:description" content="✨Atteignez vos objectif de la journée grâce à EASY-TASK ! la solution pour vous fixer des objectif 🐣">
+		<link rel="stylesheet" href="css/style.css"/>
 
-<head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TODO LIST.MVP</title>
-    <link rel="stylesheet" href="css/style.css" />
-</head>
-<script src="js/cookie.js"></script>
+	</head>
+	<script src="js/cookie.js"></script>
 
-<body>
-    <header></header>
-    <main>
-        <div style="text-align:center"><img src="logo.png" width="250px" ></div>
-        <form autocomplete="off" class="form flex" action="#" style="z-index: 1">
-            <div class="flex">
-                <div class="inputDiv">
-                    <input class="input-custom in1" name="tacheInput" type="text" id="tacheInput" onblur="hideLable()" onfocus="hideLable2()" />
-                    <label class="input_label lab1" for="tacheInput">Entré le nom de la tache *</label
-            >
-          </div>
-        </div>
-        <div class="categorie">
-          <h3>Catégorie</h3>
-          <ul id="catUl">
-            <li class="cat">Etude</li>
-            <li class="cat">Urgent</li>
-            <li class="cat">Autre</li>
-            <li class="cat">Course</li>
-          </ul>
-        </div>
-        <!--BUTTON D'ENVOIE DU FORMULAIRE-->
-        <div class="center">
-          <input
-            class="form_btn"
-            type="submit"
-            value="AJOUTER"
-          />
-          <hr class="customHr" />
-        </div>
-      </form>
+	<body>
+		<header></header>
+		<main>
+			<div style="text-align:center"><img src="logo.png" width="250px"></div>
+			<form autocomplete="off" class="form flex" action="#" style="z-index: 1">
+				<div class="flex">
+					<div class="inputDiv">
+						<input class="input-custom in1" name="tacheInput" type="text" id="tacheInput" onblur="hideLable()" onfocus="hideLable2()"/>
+						<label class="input_label lab1" for="tacheInput">Entré le nom de la tache *</label>
+					</div>
+				</div>
+				<div class="categorie">
+					<h3>Catégorie</h3>
+					<ul id="catUl">
+						<li class="cat">Etude</li>
+						<li class="cat">Urgent</li>
+						<li class="cat">Autre</li>
+						<li class="cat">Course</li>
+					</ul>
+				</div>
+				<!--BUTTON D'ENVOIE DU FORMULAIRE-->
+				<div class="center">
+					<input class="form_btn" type="submit" value="AJOUTER"/>
+					<hr class="customHr"/>
+				</div>
+			</form>
 
 
-      <h1 style="text-align: center;color: #b8d2d0" onload="test()">TACHE A FAIRE</h1>
-      <div class="flexRow">
-        <section class="
-       etude padding">
-          <h5 >Etude</h5>
-          <hr>
-        </section>
+			<h1 style="text-align: center;color: #b8d2d0" onload="test()">TACHE A FAIRE</h1>
+			<section class="flexRow">
+				<section class="
+						       etude padding">
+					<h5>Etude</h5>
+					<hr>
+				</section>
 
-        <section class="urgent padding">
-          <h5 >Urgent</h5>
-          <hr>
-        </section>
+				<section class="urgent padding">
+					<h5>Urgent</h5>
+					<hr>
+				</section>
 
-        <section class="autre padding">
-          <h5>Autre</h5>
-          <hr>
-          
-        </section>
+				<section class="autre padding">
+					<h5>Autre</h5>
+					<hr>
 
-        <section class="course padding">
-          <h5>Course</h5>
-          <hr>
-        </section>
+				</section>
 
-        <!--<section class="flexCustom2"><p class="erreurBox">Erreur !</p>  </section>-->
-      </div>
-    </main>
-    <footer></footer>
-    <script src="js/function.js"></script>
-    <script src="js/scripts.js"></script>
-  </body>
+				<section class="course padding">
+					<h5>Course</h5>
+					<hr>
+				</section>
+
+				<!--<section class="flexCustom2"><p class="erreurBox">Erreur !</p>  </section>-->
+			</section>
+		</main>
+		<footer></footer>
+		<script src="js/function.js"></script>
+		<script src="js/scripts.js"></script>
+	</body>
 </html>
